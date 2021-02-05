@@ -1,0 +1,48 @@
+<head>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 50px;
+            background-color: aqua;
+        }
+
+        h2{
+            margin-bottom: 60px;
+        }
+        form{
+        margin-bottom : 100px;
+    }
+    div{
+        margin : auto;
+        text-align: center;
+        font-size:25px;
+        padding : 40px 0;
+        width: 500px;
+        border-radius:25px;
+        border: 1px solid #003033;
+        margin-bottom: 20px;
+        background-color: antiquewhite;
+    }
+    input:focus{
+        outline:none;
+    }
+        input{
+        font-size:20px;
+        margin-top: 5px;
+        width: 50%;
+        height : 50px;
+        border-radius: 20px;
+    }
+    </style>
+</head>
+<div>
+<h2>Update task</h2>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form}}
+
+    <input type="submit" name="Update task" value="Save">
+
+</form>
+</div>
